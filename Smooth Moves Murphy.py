@@ -95,18 +95,18 @@ def main():
 
             time.sleep(1.0/60.0)
             
-            #if done:
+            if done:
                 #print ("DONE?")
-                #if info["lives"] != 0:
+                if info["lives"] <= 0:
                 #    print ("bdone", done)
                 #    print (info)
                 #    print (rew)
                 #    #print ("WHAT???")
                 #    #input()
                 #    #level_index += 1
-                #    env.close()
-                #    env = retro.make(game='SuperMarioWorld-Snes', state="VanillaDome1")
-                #obs = env.reset()
+                    #env.close()
+                    #env = retro.make(game='SuperMarioWorld-Snes', state="VanillaDome1")
+                    obs = env.reset()
                 #continue
     env.close()
 
